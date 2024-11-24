@@ -1,0 +1,82 @@
+\section{Demo}
+
+\href{https://www.bu.edu/math/files/2013/08/ShortTeX3.pdf}{The very short guide to typesetting with \LaTeX}
+
+\href{https://static.latexstudio.net/wp-content/uploads/2015/03/LaTeX_Beginners_Guide.pdf}{\LaTeX Beginners Guide}
+
+当前 Serif 字体：\fontname\font
+
+\textsf{当前 Sans-serif 字体：\fontname\font}
+
+\texttt{当前 Monospace 字体：\fontname\font}
+
+\href{https://tug.org/FontCatalogue/}{\LaTeX font catalogue}
+
+\begin{enumerate}
+    \item \href{https://tug.org/FontCatalogue/seriffonts.html}{\sffamily{Serif Fonts}}
+    \item \href{https://tug.org/FontCatalogue/typewriterfonts.html}{\sffamily{Typewriter Fonts}}
+    \item \href{https://tug.org/FontCatalogue/sansseriffonts.html}{\sffamily{Sans Serif Fonts}}
+\end{enumerate}
+
+你好，世界
+
+妳好，世界，你叫什麼名字
+
+\href{URL}{https://tug.org/FontCatalogue/garamond/}
+
+% {\fontspec{Adobe Garamond Pro}hello}
+
+\ttfamily{GPT Prompt}
+
+\begin{lstlisting}
+    hello world
+\end{lstlisting}
+
+\begin{table}[H]
+    \centering
+    \resizebox{\textwidth}{!}{
+        \begin{tabular}{|c|c|p{8cm}|}
+            \hline
+            \textbf{Field 1} & \textbf{Field 2} & \textbf{Description} \\ % 表头
+            \hline
+            \texttt{id}      & Integer          & Unique identifier for the record, usually auto-incremented in a database. \\
+            \hline
+            \texttt{name}    & String           & Name of the entity, which can be a person, product, or item in a catalog. \\
+            \hline
+            \texttt{email}   & String           & Contact email address, typically in the format \texttt{user@example.com}. \\
+            \hline
+            \texttt{created\_at} & DateTime     & The timestamp indicating when the record was created in the system. \\
+            \hline
+        \end{tabular}
+    }
+    \caption{table demo}
+    \label{table:result_table}
+\end{table}
+
+
+\begin{lstlisting}[caption=识别结果表数据示例, label=listing:result_table_sample]
+    {
+        "id": 123,
+        "image_id": 45,
+        "keypoints": [
+            {"id": 0, "x": 0.5, "y": 0.6, "z": -0.3, "visibility": 0.99},
+            {"id": 1, "x": 0.4, "y": 0.7, "z": -0.2, "visibility": 0.95},
+            ...
+        ],
+        "classification": "Good",
+        "created_at": "2024-11-23T15:45:00Z"
+    }
+\end{lstlisting}
+
+\begin{verbatim}
+    pub fn hello_world() -> (){
+        println!("Hello, world!");
+    }
+\end{verbatim}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/rust-logo-blk-whitebg-2160.png}
+    \caption{Rust logo}
+    \label{fig:file-tree}
+\end{figure}

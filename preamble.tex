@@ -4,6 +4,8 @@
 \usepackage[fontset=adobe]{ctex}
 \usepackage[tmargin=2cm,rmargin=1in,lmargin=1in,margin=0.85in,bmargin=2cm,footskip=.2in]{geometry}
 \usepackage{fontspec} % 支持自定义字体
+\usepackage{float}
+\usepackage{graphicx}
 \usepackage{listings}
 \lstset{
     language=Python,
@@ -51,14 +53,23 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % FONTSET
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 使用电脑内字体
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setmonofont{Ubuntu Mono}    % 等宽字体
+
 % \setmainfont{TimesNewRoman}[
 %     Path=./latex-fonts/TimesNewRoman/,
 %     BoldFont=TimesNewRoman-Bold
 % ] % 英文字体
 % \setsansfont{NotoSansSC-Regular}[
 %     Path=./latex-fonts/NotoSansSC/
-% ]           % 无衬线字体
-\setmonofont{Consola}[Path=./latex-fonts/Consolas/, Extension=.ttf]     % 等宽字体
+% ] % 无衬线字体
+% \setmonofont{Consola}[Path=./latex-fonts/Consolas/, Extension=.ttf]     % 等宽字体
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CJK FONTSET
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \setCJKmainfont{NotoSerifSC-Regular}[
 %     Path=./latex-fonts/NotoSerifSC/,
 %     Extension=.otf,
@@ -66,6 +77,7 @@
 %     BoldFont=NotoSerifSC-Bold
 % ]
 % \setCJKmonofont{Consola}[Path=./latex-fonts/Consolas/, Extension=.ttf]
+
 
 % hyphenpenalty值越大断字出现的就越少
 \hyphenpenalty=5000
