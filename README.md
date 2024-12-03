@@ -7,6 +7,14 @@ git clone --recursive git@github.com:desonglll/latex-tmp.git
 
 ## Install Fonts
 
+### Adobe Fonts
+
+https://github.com/desonglll/font
+
+Or ...
+
+[AdobeFangsong](https://fonts.adobe.com/fonts/adobe-fangsong)
+
 ```shell
 pip install texfont
 texfont install
